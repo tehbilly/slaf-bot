@@ -8,6 +8,7 @@
     "cheerio": "^0.10.7",
     "hubot": "^2.11.4",
     "hubot-explainshell": "^1.1.0",
+    "hubot-google-images": "^0.1.4",
     "hubot-help": "^0.1.1",
     "hubot-heroku-keepalive": "0.0.4",
     "hubot-maps": "0.0.1",
