@@ -1,6 +1,5 @@
 [
   "hubot-heroku-keepalive",
   "hubot-redis-brain",
-  "hubot-explainshell",
-  "hubot-google-images"
+  "hubot-explainshell"
 ]
