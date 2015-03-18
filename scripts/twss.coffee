@@ -10,12 +10,12 @@
 #      respond with 'twss'.  Defaults to 0.98
 #   HUBOT_TWSS_CHANCE (optional)
 #      Float chance that phrase will be sent at all. Defaults
-#      to 0.6 (60% of the time)
+#      to 0.2 (20% of the time)
 #
 # Author:
 #   https://github.com/aaronstaves/
 twss = require 'twss'
-twssChance = process.env.HUBOT_TWSS_CHANCE or 0.6
+twssChance = process.env.HUBOT_TWSS_CHANCE or 0.2
 
 module.exports = (robot) ->
     robot.hear /(.*)/i, (msg) ->
