@@ -17,19 +17,20 @@
 # Variables
 steamKey = process.env.HUBOT_STEAM_TOKEN
 groupName = process.env.HUBOT_STEAM_GROUP
+allGood = true
 
 # No HUBOT_STEAM_TOKEN?
 unless steamKey?
     console.log "Missing HUBOT_STEAM_TOKEN. Please set this and try again."
-    process.exit(1)
+    allGood = false
 
 # No HUBOT_STEAM_GROUP?
 unless groupName?
     console.log "Missing HUBOT_STEAM_GROUP. Please set this and try again."
-    process.exit(1)
+    allGood = false
 
 
-module.exports = (robot) ->
+module.exports = (robot) -> unless !allGood
     {parseString} = require 'xml2js'
     groupMembers = ''
 
